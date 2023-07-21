@@ -1,0 +1,93 @@
+@mixin grid {
+  display: grid;
+}
+@mixin list {
+  cursor: pointer;
+  outline: none;
+  line-height: 1.3;
+  text-transform: capitalize;
+  margin: 3rem 0;
+}
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reborn-section {
+  .reborn {
+    @include grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .reborn-heading {
+      font-size: 8rem;
+      width: 60%;
+      text-transform: capitalize;
+      line-height: 1.2;
+      color: #fff;
+      letter-spacing: -1px;
+    }
+    .reborn-list {
+      list-style: none;
+
+      .reborn-link {
+        @include flex;
+        @include list;
+        font-size: 1.8rem;
+
+        color: #fff;
+      }
+    }
+    hr {
+      border: 0.5px solid rgba(255, 255, 255, 0.379);
+    }
+  }
+  .reborn-video-links {
+    margin-top: 15rem;
+  }
+  .reborn-video-link {
+    @include list;
+    color: #508f80;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    font-size: 1.8rem;
+  }
+}
+.reborn-box {
+  padding: 15rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  .reborn-box-item {
+    background-color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40rem;
+    width: 30rem;
+    .box-text {
+      font-size: 1.4rem;
+      line-height: 1.5;
+      font-weight: map-get($font-weight, bold);
+      color: #000;
+    }
+    .box-heading {
+      font-size: 2rem;
+      line-height: 1.2;
+      font-weight: map-get($font-weight, bold);
+      color: #000;
+    }
+    .fifth-heading {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      font-weight: map-get($font-weight, bold);
+      color: #000;
+    }
+  }
+}

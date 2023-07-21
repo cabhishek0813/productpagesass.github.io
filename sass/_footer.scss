@@ -1,0 +1,56 @@
+@mixin footerSection {
+  background-color: #fff;
+  padding: 5rem 5rem 2.5rem 5rem;
+  margin: 0 auto;
+  border-top: 1px solid #999;
+}
+footer {
+  @include footerSection;
+
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 40%;
+    margin-bottom: 2rem;
+  }
+  a {
+    color: blue;
+  }
+  .footet-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-nav {
+    text-decoration: none;
+  }
+  .footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 5rem;
+  }
+  .footer-nav-link {
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .soicl-medis-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  .ftr-soc-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: inline-block;
+    &:hover {
+      color: #006bea;
+      transition: all 0.5s;
+    }
+  }
+}

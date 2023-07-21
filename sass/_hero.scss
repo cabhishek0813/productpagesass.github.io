@@ -1,0 +1,53 @@
+@mixin primaryHeading {
+  font-size: 4rem;
+  // color: #fff;
+  display: inline-block;
+  font-weight: map-get($font-weight, bold);
+  line-height: 1.2;
+  width: 36rem;
+}
+.hero-section {
+  overflow: hidden;
+  position: relative;
+  .primary-heading {
+    @include primaryHeading();
+    position: absolute;
+    top: 15rem;
+    left: 15rem;
+    z-index: 999;
+    background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(0, 107, 234));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-btn {
+    color: #fff;
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 2rem 3rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    font-weight: map-get($font-weight, medium);
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 25rem;
+    left: 15rem;
+    z-index: 999;
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      transition: all 0.5s ease;
+    }
+  }
+  .hero-img {
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.5);
+    object-position: center;
+  }
+  .mobile-img {
+    display: none;
+  }
+}

@@ -1,0 +1,100 @@
+@mixin grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.pen-one-section {
+  position: relative;
+  overflow: hidden;
+
+  .pen-one {
+    @include grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 25rem;
+    gap: 20rem;
+
+    .pen-number {
+      font-size: 1.6rem;
+      color: #8b8b8b;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1.4rem;
+    }
+    .common-small-title {
+      font-size: 1.6rem;
+      color: #fff;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 2.4rem;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+    .common-desc {
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 2.4rem;
+    }
+    .common-desclaimer {
+      font-size: 1.4rem;
+      color: #8b8b8b;
+      font-weight: 400;
+      line-height: 1.4;
+      margin-bottom: 1.4rem;
+    }
+    // .pen-one-img-box {
+    //   overflow: hidden;
+    // }
+    .pen-image {
+      width: 100%;
+      object-fit: contain;
+      transform: scale(1.6);
+    }
+  }
+
+  .pen-two {
+    @include grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20rem;
+
+    .pen-number {
+      font-size: 1.6rem;
+      color: #8b8b8b;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1.4rem;
+    }
+    .common-small-title {
+      font-size: 1.6rem;
+      color: #fff;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 2.4rem;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+    .common-desc {
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 2.4rem;
+    }
+    .common-desclaimer {
+      font-size: 1.4rem;
+      color: #8b8b8b;
+      font-weight: 400;
+      line-height: 1.4;
+      margin-bottom: 1.4rem;
+    }
+    // .pen-one-img-box {
+    //   overflow: hidden;
+    // }
+    .pen-image {
+      width: 100%;
+      object-fit: contain;
+      transform: scale(1.6);
+    }
+  }
+}

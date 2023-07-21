@@ -1,0 +1,137 @@
+@import "./config";
+@import "./hero";
+@import "./reborn";
+@import "./innovation";
+@import "./colors";
+@import "./pen";
+@import "./pens";
+@import "./camera";
+@import "./feacam";
+@import "./walhea";
+@import "./faq";
+@import "./banner";
+@import "./text";
+@import "./footer";
+@import "./responsive";
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+}
+@mixin sections {
+  background-color: black;
+  border-top: 0.5px solid #ffffff31;
+}
+
+@mixin containers {
+  max-width: 120rem;
+  margin: 0 auto;
+  border-left: 1px solid#ffffff31;
+}
+@mixin specialContainers {
+  padding: 0 2.5rem;
+}
+section {
+  @include sections;
+  padding: 10rem 10rem 6rem 10rem;
+}
+.containers {
+  @include specialContainers;
+}
+.container {
+  @include containers;
+  padding: 0 10rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.header {
+  background-color: #fff;
+
+  .header-box-one {
+    @include flex;
+    gap: 3rem;
+    border-bottom: 0.5px solid #00000025;
+    padding: 2rem 1rem;
+  }
+  .main-nav {
+    flex: 2;
+  }
+
+  .main-nav-list {
+    @include flex;
+    gap: 2rem;
+  }
+  .main-nav-link {
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+      border-radius: 5rem;
+    }
+  }
+  .second-nav-list {
+    @include flex;
+    gap: 2.5rem;
+    .second-nav-link {
+      @extend .main-nav-link;
+    }
+  }
+  .header-icon-box {
+    @include flex;
+    gap: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .product-details-list {
+    @include flex;
+    justify-content: space-between;
+    padding: 0rem 1.5rem;
+    border-bottom: 0.5px solid #00000025;
+  }
+  .product-details-box {
+    @include flex;
+    gap: 2rem;
+  }
+  .module-name {
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: map-get($font-weight, bold);
+  }
+  .product-details-lists {
+    @include flex;
+    gap: 5rem;
+
+    .product-details-link {
+      font-size: 1.1rem;
+      color: #000;
+      font-weight: map-get($font-weight, bold);
+      text-transform: uppercase;
+      text-transform: uppercase;
+    }
+    .buy-btn {
+      font-size: 1.3rem;
+      padding: 2rem 6rem;
+      display: inline-block;
+      background-color: #006bea;
+      font-weight: map-get($font-weight, bold);
+      color: #fff;
+      align-self: flex-end;
+      margin-right: -1.5rem;
+    }
+    .wallet-img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+@mixin bannerHeading {
+  font-weight: 700;
+  line-height: 1.3;
+  width: 60%;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+@mixin bannerImage {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+@mixin banner {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+@mixin bannerBtn {
+  padding: 1.5rem 3rem;
+  border: 1px solid #999;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.banner-section {
+  background-color: #f5f6f8;
+  padding: 5rem 5rem 0 5rem;
+
+  .intro-ban-img {
+    @include bannerImage;
+    height: 35rem;
+  }
+  .intro-banner {
+    @include banner;
+    .intro-ban-text-box {
+      position: absolute;
+      top: 10rem;
+      left: 5rem;
+    }
+    .intro-banner-heading {
+      @include bannerHeading;
+      color: #000;
+      font-size: 3.2rem;
+    }
+    .intro-ban-btn {
+      @include bannerBtn;
+    }
+  }
+  .buynow-ban-img {
+    @include bannerImage;
+    height: 35rem;
+  }
+  .buynow-banner {
+    @include banner;
+    .buynow-ban-text-box {
+      position: absolute;
+      top: 10rem;
+      left: 5rem;
+    }
+    .buynow-banner-heading {
+      @include bannerHeading;
+      font-size: 3.2rem;
+
+      color: #fff;
+    }
+    .buynow-ban-btn {
+      @include bannerBtn;
+      color: #fff;
+    }
+  }
+  .ar-ban-img {
+    @include bannerImage;
+    height: 35rem;
+  }
+  .ar-banner {
+    @include banner;
+    .ar-ban-text-box {
+      position: absolute;
+      top: 10rem;
+      left: 5rem;
+    }
+    .ar-banner-heading {
+      @include bannerHeading;
+      font-size: 3.2rem;
+
+      color: #fff;
+    }
+    .ar-ban-btn {
+      @include bannerBtn;
+      color: #fff;
+    }
+  }
+  .why-ban-img {
+    @include bannerImage;
+    height: 35rem;
+  }
+  .why-banner {
+    @include banner;
+    .why-ban-text-box {
+      position: absolute;
+      top: 10rem;
+      left: 5rem;
+    }
+    .why-banner-heading {
+      @include bannerHeading;
+      color: #fff;
+    }
+    .why-ban-btn {
+      @include bannerBtn;
+      color: #fff;
+    }
+    .why-des {
+      font-size: 1.2rem;
+      color: #fff;
+      width: 55%;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.faq-section {
+  border: none;
+  .faq-heading {
+    font-size: 3.6rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: capitalize;
+    margin-bottom: 5rem;
+    display: inline-block;
+    color: #fff;
+  }
+  summary {
+    cursor: pointer;
+    outline: none;
+    font-size: 2.2rem;
+    color: #fff;
+    transition: all 0.5s ease-in;
+  }
+  details {
+    padding: 10px;
+    border-top: 1px solid #999;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: #fff;
+    transition: all 0.5s ease-in;
+  }
+  details p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 4rem;
+    color: #fff;
+  }
+  .faq-btn {
+    color: #fff;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+}

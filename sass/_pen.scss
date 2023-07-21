@@ -1,0 +1,39 @@
+.pen-section {
+  position: relative;
+  overflow: hidden;
+
+  .pen {
+    .secoundary-btn {
+      color: #fff;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 2.4rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .common-heading-two {
+      color: #fff;
+      font-size: 4.4rem;
+      font-weight: 700;
+      line-height: 1.2;
+      text-transform: capitalize;
+      display: inline-block;
+      width: 40%;
+      margin-bottom: 2.4rem;
+    }
+    .pen-des {
+      color: #ffffff;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      width: 37%;
+    }
+    .pen-img {
+      position: absolute;
+      width: 50%;
+      top: 10rem;
+      right: 0;
+      transform: scale(1.2);
+    }
+  }
+}

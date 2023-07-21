@@ -1,0 +1,114 @@
+@mixin des {
+  color: #ffffff;
+  line-height: 1.5;
+}
+@mixin common-heading-two {
+  color: #fff;
+  font-weight: 700;
+  line-height: 1;
+}
+@mixin colBtn {
+  color: #fff;
+  font-size: 1.3rem;
+  display: inline-block;
+  padding: 2rem 3rem;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  font-weight: map-get($font-weight, bold);
+  cursor: pointer;
+  margin-top: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.5s ease;
+  }
+}
+.colors-section {
+  position: relative;
+
+  .colors-text {
+    margin-bottom: 10rem;
+    .colors-des {
+      @include des;
+      width: 50%;
+      font-size: 1.6rem;
+    }
+  }
+  .colors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+
+    .secoundary-heading {
+      color: #fff;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 2.4rem;
+      font-weight: 600;
+    }
+    .common-heading-two {
+      @include common-heading-two;
+      font-size: 4.4rem;
+    }
+    .col-des {
+      @include des;
+      width: 80%;
+      margin-top: 2rem;
+      font-size: 1.6rem;
+    }
+    .color-side-img {
+      width: 40%;
+      object-fit: cover;
+      position: absolute;
+      top: 80rem;
+      left: 0;
+    }
+    .col-btn {
+      @include colBtn;
+    }
+    .color-img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+.nature {
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+
+  .third-heading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+    line-height: 1.1;
+    margin-bottom: 2.4rem;
+    color: #fff;
+  }
+  .common-heading-two {
+    @include common-heading-two;
+    font-size: 4.4rem;
+  }
+  .nature-des-box {
+    align-self: center;
+  }
+
+  .nature-des {
+    font-size: 1.8rem;
+    color: #fff;
+    line-height: 1.4;
+    text-transform: capitalize;
+  }
+  .nature-btn {
+    @include colBtn;
+  }
+}
+.nature-img {
+  width: 100%;
+  object-fit: contain;
+}

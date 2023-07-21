@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap");
+
+// Variables
+
+$primary_color: "#006BEA";
+$secoundary_color: "#508F80";
+
+$font-weight: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 900,
+);
+
+// Basic Rule
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: "Merriweather", serif;
+}
+@mixin media-phone-extra-small {
+  @media only screen and (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin media-phone-extra {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}
+@mixin media-phone {
+  @media only screen and (max-width: 750px) {
+    @content;
+  }
+}
+@mixin media-tablets {
+  @media only screen and (max-width: 950px) {
+    @content;
+  }
+}
+@mixin media-laptops {
+  @media only screen and (max-width: 1100px) {
+    @content;
+  }
+}
